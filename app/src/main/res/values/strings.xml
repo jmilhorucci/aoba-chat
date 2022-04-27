@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Aoba Chat</string>
+    <string name="voce_recebera">Você receberá</string>
+    <string name="uma_senha_temporaria">Uma Senha Temporária</string>
+    <string name="neste_numero">neste número...</string>
+    <string name="numero_do_celular">Número do Celular</string>
 </resources>
