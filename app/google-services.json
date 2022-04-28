@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "607595559628",
+    "project_id": "aoba-chat",
+    "storage_bucket": "aoba-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607595559628:android:3f1a702328c94ba3876069",
+        "android_client_info": {
+          "package_name": "com.example.aobachat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607595559628-42u9u6dplvknu63ia0hh3ht08n0ui99q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoAwdb6ccXa3erQNKeU0TfGlV6XsA7gts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607595559628-42u9u6dplvknu63ia0hh3ht08n0ui99q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

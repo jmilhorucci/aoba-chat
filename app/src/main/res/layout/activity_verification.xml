@@ -21,7 +21,7 @@
     <TextView
         android:text="Validação de Dispositivo"
         android:textAlignment="center"
-        android:textSize="22sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="#F50057"
         android:layout_width="match_parent"
@@ -94,7 +94,6 @@
                 android:textSize="16sp"
                 android:textAllCaps="false"
                 app:backgroundTint="#E91E63"
-
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </LinearLayout>

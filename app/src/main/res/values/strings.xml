@@ -4,4 +4,6 @@
     <string name="uma_senha_temporaria">Uma Senha Temporária</string>
     <string name="neste_numero">neste número...</string>
     <string name="numero_do_celular">Número do Celular</string>
+    <string name="informacoes_do_perfil">Informações do Perfil</string>
+    <string name="digite_seu_nome">Digite seu Nome</string>
 </resources>

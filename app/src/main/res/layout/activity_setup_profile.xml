@@ -8,31 +8,30 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:layout_gravity="center"
-    android:background="#FFF"
-    tools:context=".OTPActivity">
-    <ImageView
-        android:src="@drawable/verified"
-        android:scaleType="centerCrop"
-        android:layout_width="250dp"
-        android:layout_height="250dp"/>
+    tools:context=".SetupProfileActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgView"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
     <TextView
-        android:id="@+id/lblePhone"
-        android:text="Verifique +5517991234567"
+        android:text="@string/informacoes_do_perfil"
         android:textAlignment="center"
+        android:layout_marginTop="19dp"
         android:textSize="25sp"
         android:textStyle="bold|normal"
         android:textColor="#E91E63"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <TextView
-        android:text="Digite o código recebido para verificar seu número de telefone"
+        android:text="Pra ficar top, me fale seu nome e escolha foto clicando sobre ícone acima."
         android:textAlignment="center"
         android:textSize="16sp"
+        android:textStyle="bold|normal"
         android:textColor="#6E6C6C"
-        android:textStyle="normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
     <androidx.cardview.widget.CardView
         app:cardUseCompatPadding="true"
         app:cardCornerRadius="8dp"
@@ -48,24 +47,21 @@
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <com.mukesh.OtpView
-                android:id="@+id/otp_view"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
+            <EditText
+                android:id="@+id/editName"
+                android:hint="@string/digite_seu_nome"
                 android:padding="10dp"
-                android:inputType="number"
-                android:itemBackground="#FFF"
-                android:focusableInTouchMode="true"
-                app:OtpItemCount="6"
-                app:OtpLineColor="#E91E63"
-                app:OtpViewType="line"
-                android:textSize="25sp"
-                android:textStyle="bold"
+                android:ems="1"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:textStyle="bold|normal"
+                android:textColor="#6E6C6C"
                 android:layout_marginBottom="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"/>
+                android:background="@drawable/background_shape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
             <Button
-                android:id="@+id/btnContinue"
+                android:id="@+id/btnContinue2"
                 android:text="Continue"
                 android:textStyle="bold|normal"
                 android:textSize="16sp"
@@ -73,7 +69,6 @@
                 app:backgroundTint="#E91E63"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
