@@ -5,7 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ProgressBar
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.aobachat.databinding.ActivitySetupProfileBinding
 import com.example.aobachat.model.User
 import com.google.firebase.auth.FirebaseAuth
@@ -24,15 +24,16 @@ class SetupProfileActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         binding = ActivitySetupProfileBinding.inflate(layoutInflater)
         setContentView(binding!!.root)
-        dialog!!.setMessage("Atualizando Perfil...")
-        dialog!!.setCancelable(false)
+        dialog?.setMessage("Atualizando Perfil...")
+        dialog?.setCancelable(false)
         database = FirebaseDatabase.getInstance()
         storage = FirebaseStorage.getInstance()
         auth = FirebaseAuth.getInstance()
         supportActionBar?.hide()
-        binding!!.imgView.setOnClickListener{
+        binding!!.imageView.setOnClickListener{
             val intent = Intent()
             intent.action = Intent.ACTION_GET_CONTENT
             intent.type = "image/*"
@@ -44,7 +45,7 @@ class SetupProfileActivity : AppCompatActivity() {
             if(name.isEmpty()){
                 binding!!.editName.setError("Por favor, digite seu nome")
             }
-            dialog!!.show()
+            dialog?.show()
             if(selectedImage != null){
                 val reference = storage!!.reference.child("Profile")
                     .child(auth!!.uid!!)
@@ -113,7 +114,7 @@ class SetupProfileActivity : AppCompatActivity() {
                         }
                     }
                 }
-                binding!!.imgView.setImageURI(data.data)
+                binding!!.imageView.setImageURI(data.data)
                 selectedImage = data.data
             }
         }

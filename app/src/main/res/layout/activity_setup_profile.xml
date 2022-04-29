@@ -10,7 +10,7 @@
     android:layout_gravity="center"
     tools:context=".SetupProfileActivity">
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imgView"
+        android:id="@+id/imageView"
         android:layout_marginTop="32dp"
         android:src="@drawable/avatar"
         android:layout_width="150dp"
