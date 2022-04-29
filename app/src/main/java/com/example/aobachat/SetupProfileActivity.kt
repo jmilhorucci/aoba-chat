@@ -27,8 +27,9 @@ class SetupProfileActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         binding = ActivitySetupProfileBinding.inflate(layoutInflater)
         setContentView(binding!!.root)
-        dialog?.setMessage("Atualizando Perfil...")
-        dialog?.setCancelable(false)
+        dialog = ProgressDialog(this@SetupProfileActivity)
+        dialog!!.setMessage("Atualizando Perfil...")
+        dialog!!.setCancelable(false)
         database = FirebaseDatabase.getInstance()
         storage = FirebaseStorage.getInstance()
         auth = FirebaseAuth.getInstance()
@@ -45,7 +46,7 @@ class SetupProfileActivity : AppCompatActivity() {
             if(name.isEmpty()){
                 binding!!.editName.setError("Por favor, digite seu nome")
             }
-            dialog?.show()
+            dialog!!.show()
             if(selectedImage != null){
                 val reference = storage!!.reference.child("Profile")
                     .child(auth!!.uid!!)

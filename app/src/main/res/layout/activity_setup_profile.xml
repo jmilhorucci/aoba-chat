@@ -57,6 +57,7 @@
                 android:textStyle="bold|normal"
                 android:textColor="#6E6C6C"
                 android:layout_marginBottom="15dp"
+                android:text="Juliano"
                 android:background="@drawable/background_shape"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>

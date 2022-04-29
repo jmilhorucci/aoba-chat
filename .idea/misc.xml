@@ -3,13 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Unifafibe/AndroidStudioProjects/aoba-chat/app/src/main/res/layout/activity_setup_profile.xml" value="0.18" />
-        <entry key="..\:/Users/Unifafibe/AndroidStudioProjects/aoba-chat/app/src/main/res/layout/activity_verification.xml" value="0.17980072463768115" />
         <entry key="..\:/Users/jmilhorucci/Desktop/projetos_kotlin/aoba-chat/app/src/main/res/drawable/background_shape.xml" value="0.1" />
-        <entry key="..\:/Users/jmilhorucci/Desktop/projetos_kotlin/aoba-chat/app/src/main/res/layout/activity_main.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/jmilhorucci/Desktop/projetos_kotlin/aoba-chat/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/jmilhorucci/Desktop/projetos_kotlin/aoba-chat/app/src/main/res/layout/activity_otpactivity.xml" value="0.22" />
         <entry key="..\:/Users/jmilhorucci/Desktop/projetos_kotlin/aoba-chat/app/src/main/res/layout/activity_setup_profile.xml" value="0.25" />
         <entry key="..\:/Users/jmilhorucci/Desktop/projetos_kotlin/aoba-chat/app/src/main/res/layout/activity_verification.xml" value="0.25" />
+        <entry key="..\:/Users/jmilhorucci/Desktop/projetos_kotlin/aoba-chat/app/src/main/res/layout/item_profile.xml" value="0.33" />
       </map>
     </option>
   </component>
